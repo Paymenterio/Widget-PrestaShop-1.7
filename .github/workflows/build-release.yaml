@@ -2,8 +2,7 @@ name: Build and release the module.
 
 on:
   push:
-    tags:
-      - '*'
+    branches: [ master ]
 
 jobs:
   build:
