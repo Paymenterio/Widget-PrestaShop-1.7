@@ -1,0 +1,21 @@
+name: Build and release the module.
+
+on:
+  pull_request:
+    branches: [stable]
+    types: [closed]
+  push:
+    branches: [ stable ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          filename: 'paymenterio.zip'
+          directory: 'paymenterio'
+          exclusions: '*.git* *.idea* /*node_modules/* .editorconfig'
