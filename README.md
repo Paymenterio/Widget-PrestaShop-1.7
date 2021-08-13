@@ -6,7 +6,7 @@
 
 
 ### Najnowsza wersja modułu oraz instrukcja instalacji:
-[Zobacz instrukcję](https://www.paymenterio.pl)
+[Zobacz instrukcję](manual.pdf)
 
 --
 Obecnie Paymenterio nie wspiera modułu płatniczego dla starszej wersji PrestaShop (1.6).
