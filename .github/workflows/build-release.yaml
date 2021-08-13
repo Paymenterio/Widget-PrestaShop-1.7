@@ -2,10 +2,10 @@ name: Build and release the module.
 
 on:
   pull_request:
-    branches: [stable]
+    branches: [master]
     types: [closed]
   push:
-    branches: [ stable ]
+    branches: [ master ]
 
 jobs:
   build:
