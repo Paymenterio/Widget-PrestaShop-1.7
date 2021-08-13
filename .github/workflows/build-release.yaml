@@ -16,7 +16,7 @@ jobs:
           type: 'zip'
           filename: 'paymenterio.zip'
           directory: 'paymenterio'
-          exclusions: '*.git* *.idea* /*node_modules/* .editorconfig'
+          exclusions: '*.git* *.idea* /*node_modules/* .editorconfig .gitignore manual.pdf .github README.md'
 
       - name: Upload Release
         uses: ncipollo/release-action@v1
