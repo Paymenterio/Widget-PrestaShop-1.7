@@ -19,3 +19,9 @@ jobs:
           filename: 'paymenterio.zip'
           directory: 'paymenterio'
           exclusions: '*.git* *.idea* /*node_modules/* .editorconfig'
+
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "paymenterio.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
